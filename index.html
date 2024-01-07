@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Gradient Element</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <monopo-gradient 
+    color1="#3d0362" color2="#baffd3" color3="#32ff7c" color4="#aa25ff" 
+    colorsize="0.5" colorspacing="0.52" colorrotation="-0.381592653589793" 
+    colorspread="100.52" coloroffset="-0.7741174697875977,-0.20644775390624992" 
+    displacement="1.3352337514253154" seed="-0.3104880581516103" 
+    position="-0.2816110610961914,-0.43914794921875" zoom="0.72" 
+    spacing="4.27" noretina="false" class="c-PixiIntro-gradient">
+  </monopo-gradient>
+
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#" id="showProjects" class="link-style">Projects</a></li>
+      <li><a href="#" id="showAbout" class="link-style">About</a></li>
+      <li><a href="#" id="showContact" class="link-style">Contact</a></li>
+    </ul>
+  </nav>
+  
+    
+  <div class="logo">
+    <img src="https://cdn.discordapp.com/attachments/1176532411681620150/1193097422763724830/Screenshot_2024-01-06_at_9.43.01.png?ex=65ab7990&is=65990490&hm=0715590d50aded2676f692f07a755644be11ca364955554426cb50abb8e16dcd" alt="Your Logo">
+  </div>
+  <div class="scroll-container">
+
+      <button id="showProjects" class="HIDDEN">Preview Projects</button>
+      <button id="showAbout" class="HIDDEN">Preview Projects</button>
+      <button id="showContact" class="HIDDEN">Preview Projects</button>
+
+
+      <div class="about-page section">
+        <h1>About Me</h1>
+        <p>Welcome to my about page, My names Noam, im from Singapore </p>
+        <p>and Ive been programming for 4 Years.</p>
+      </div>
+    
+      <div class="contact-page section">
+        <h1>Contact Me</h1>
+        <p>Get in touch with me!</p>
+      </div>
+
+      
+      <div class="projects">
+        <div class="portfolio-container">
+          <div class="portfolio-item">
+            <div class="text-content">
+              <h2>Region News</h2>
+              <p>A local News provider that displays news from trusted news sources, 10+ languages.</p>  
+            </div>
+            <div class="preview-box">
+              <div class="preview-image" data-image="1"></div>
+            </div>
+          </div>
+      
+          <div class="portfolio-item">
+            <div class="text-content">
+              <h2>My Github</h2>
+              <p>My Github is generally new but Has some of my projects open source, and they really show my Understanding.</p>  
+            </div>
+            <div class="preview-box">
+              <div class="preview-image" data-image="2"></div>
+            </div>
+          </div>
+      
+          <div class="portfolio-item">
+            <div class="text-content">
+              <h2>This Portfolio</h2>
+              <p>😁</p> 
+            </div>
+            <div class="preview-box">
+              <div class="preview-image" data-image="3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="cursor"></div>
+  <canvas id="pixiCanvas"></canvas>
+
+  <script src="https://monopo.london/_nuxt/56b94da.js" defer=""></script>
+  <script src="https://monopo.london/_nuxt/282e980.js" defer=""></script>
+  <script src="https://monopo.london/_nuxt/1da3819.js" defer=""></script>
+  <script src="https://monopo.london/_nuxt/ff2b0f1.js" defer=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.min.js"></script>
+  <script src="shaders.js"></script>
+  <script src="cursor-control.js"></script>
+  <script src="webstate.js"></script>
+</body>
+</html>
